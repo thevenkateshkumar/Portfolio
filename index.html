@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the Venkatesh — Security Engineer / SOC &amp; EDR Specialist</title>
+<meta name="description" content="Portfolio of Venkatesh Kumar — Security Engineer specializing in EDR, SOC operations, VAPT, and cloud security. CEH v11, SC-300, SC-900 certified.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23ff003c%22>&gt;</text></svg>">
+</head>
+<body>
+
+<!-- scanline / crt overlay -->
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="logo"><span class="logo-red">the</span><span class="logo-white">Venkatesh</span><span class="cursor-blink">_</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-cmd="whoami">about</a>
+      <a href="#skills" data-cmd="ls">skills</a>
+      <a href="#experience" data-cmd="history">experience</a>
+      <a href="#certifications" data-cmd="cat">certs</a>
+      <a href="#freelance" data-cmd="man">freelance</a>
+      <a href="#contact" data-cmd="ssh">contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO / BANNER ================= -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <!-- Replace assets/banner.jpg with your own banner image.
+         Recommended source size: 2400x900px (or larger, same ratio).
+         The frame below auto-adjusts its aspect ratio for mobile vs desktop. -->
+    <img src="assets/banner.jpg" alt="Venkatesh Kumar banner" class="hero-img" id="heroImg">
+    <div class="hero-fallback" id="heroFallback" aria-hidden="true"></div>
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="term-line"><span class="prompt">root@venkatesh:~$</span> <span id="typedLine" class="typed"></span><span class="cursor-blink">_</span></p>
+    <h1 class="hero-title">
+      <span class="hero-title-red">SECURITY</span>
+      <span class="hero-title-white">ENGINEER</span>
+    </h1>
+    <p class="hero-sub">EDR &amp; SOC Operations &nbsp;/&nbsp; VAPT &nbsp;/&nbsp; Cloud Security (AWS · Azure) &nbsp;/&nbsp; Endpoint Defense</p>
+    <div class="hero-tags">
+      <span class="tag">CEH v11</span>
+      <span class="tag">SC-300</span>
+      <span class="tag">SC-900</span>
+      <span class="tag">Kaspersky Next EDR</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-solid">Get In Touch</a>
+      <a href="#experience" class="btn btn-outline">View Experience</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <p class="section-cmd">$ whoami</p>
+  <div class="about-grid">
+    <div class="about-portrait-wrap">
+      <!-- Replace assets/portrait.jpg with your own photo.
+           Recommended source size: 1200x900px (4:3 ratio) for best crop. -->
+      <div class="about-portrait">
+        <img src="assets/portrait.jpg" alt="Portrait of Venkatesh Kumar" id="portraitImg">
+        <div class="portrait-fallback" id="portraitFallback" aria-hidden="true">PHOTO<br>4:3</div>
+      </div>
+      <div class="portrait-frame-tag">/home/venkatesh/id_photo.jpg</div>
+    </div>
+    <div class="about-text">
+      <h2 class="section-title"><span class="red">About</span> Me</h2>
+      <p>
+        I'm Venkatesh Kumar, a security-minded infrastructure engineer with close to
+        <strong class="white">2.5+ years</strong> of hands-on experience defending endpoints,
+        hardening identities, and keeping healthcare-grade systems online. My background
+        spans <strong class="white">EDR administration, patch management, and Microsoft 365
+        security</strong>, and I'm currently sharpening my edge toward offensive security —
+        VAPT, SOC operations, and firewall management — to operate on both sides of the
+        fence: build the wall, then know exactly how it gets breached.
+      </p>
+      <p>
+        I hold certifications across offensive and defensive security tracks
+        (<strong class="white">CEH v11, SC-300, SC-900, Kaspersky Next EDR</strong>), and I
+        genuinely enjoy the process of turning complex security concepts into practical,
+        repeatable playbooks — whether that's for a SOC dashboard or for someone prepping
+        for their next certification exam.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">2.5+</span>
+          <span class="stat-label">Years in Security &amp; Infra Support</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Active Certifications</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Enterprise Environments Secured</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills">
+  <p class="section-cmd">$ ls -la /skills/</p>
+  <h2 class="section-title"><span class="red">Technical</span> Arsenal</h2>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <h3 class="skill-cat">Endpoint &amp; EDR</h3>
+      <ul>
+        <li>Kaspersky Next EDR</li>
+        <li>Sophos Endpoint (in progress)</li>
+        <li>Patch &amp; Vulnerability Management</li>
+        <li>JAMF (in progress)</li>
+        <li>Threat Detection &amp; Response</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-cat">SOC &amp; Offensive Security</h3>
+      <ul>
+        <li>SOC Monitoring &amp; Triage</li>
+        <li>VAPT Fundamentals (CEH v11)</li>
+        <li>Incident Response Workflows</li>
+        <li>Log Analysis</li>
+        <li>Fortinet Firewall (in progress)</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-cat">Cloud &amp; Identity</h3>
+      <ul>
+        <li>Microsoft 365 Security</li>
+        <li>Azure AD / Entra ID (SC-300)</li>
+        <li>Security Fundamentals (SC-900)</li>
+        <li>AWS Security Basics (in progress)</li>
+        <li>Identity &amp; Access Management</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <h3 class="skill-cat">Infrastructure &amp; Support</h3>
+      <ul>
+        <li>Healthcare IT Infrastructure</li>
+        <li>Technical Support &amp; Escalations</li>
+        <li>Large-Scale Endpoint Management</li>
+        <li>Documentation &amp; SOPs</li>
+        <li>Cross-Team Troubleshooting</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <p class="section-cmd">$ history | tail -n 2</p>
+  <h2 class="section-title"><span class="red">Work</span> Experience</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-body">
+        <div class="timeline-head">
+          <h3>Technical Support Engineer</h3>
+          <span class="timeline-date">Current</span>
+        </div>
+        <p class="timeline-org">LTM &mdash; Healthcare Infrastructure</p>
+        <p>
+          Supporting critical healthcare IT infrastructure, focused on system reliability,
+          security hygiene, and rapid incident resolution in an environment where uptime
+          and data protection are non-negotiable.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-body">
+        <div class="timeline-head">
+          <h3>Technical Support Engineer</h3>
+          <span class="timeline-date">~2.5 Years</span>
+        </div>
+        <p class="timeline-org">Ecaps</p>
+        <p>
+          Managed <strong class="white">Kaspersky EDR</strong> deployment and tuning across a
+          large endpoint fleet, ran <strong class="white">patch management</strong> cycles to
+          close vulnerability windows, and administered <strong class="white">Microsoft 365
+          security</strong> controls including identity and threat protection policies.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION + CERTIFICATIONS ================= -->
+<section class="section section-alt" id="certifications">
+  <p class="section-cmd">$ cat certifications.log</p>
+  <h2 class="section-title"><span class="red">Education</span> &amp; Certifications</h2>
+
+  <div class="cert-grid">
+    <div class="cert-card">
+      <span class="cert-tag">OFFENSIVE</span>
+      <h3>CEH v11</h3>
+      <p>Certified Ethical Hacker — foundations of penetration testing, VAPT methodology, and adversary tradecraft.</p>
+    </div>
+    <div class="cert-card">
+      <span class="cert-tag">IDENTITY</span>
+      <h3>SC-300</h3>
+      <p>Microsoft Identity &amp; Access Administrator — Azure AD / Entra ID security, IAM, and access governance.</p>
+    </div>
+    <div class="cert-card">
+      <span class="cert-tag">FOUNDATION</span>
+      <h3>SC-900</h3>
+      <p>Microsoft Security, Compliance &amp; Identity Fundamentals — cross-platform security concepts.</p>
+    </div>
+    <div class="cert-card">
+      <span class="cert-tag">DEFENSIVE</span>
+      <h3>Kaspersky Next EDR</h3>
+      <p>Endpoint Detection &amp; Response — deployment, policy tuning, and threat response operations.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FREELANCE / MENTORING ================= -->
+<section class="section" id="freelance">
+  <p class="section-cmd">$ man mentorship</p>
+  <h2 class="section-title"><span class="red">Freelance</span> &amp; Career Mentoring</h2>
+  <div class="freelance-grid">
+    <div class="freelance-card">
+      <h3>Security Consulting</h3>
+      <p>EDR deployment, endpoint hardening, patch management strategy, and M365 security reviews for small
+      and mid-sized teams.</p>
+    </div>
+    <div class="freelance-card">
+      <h3>Certification Coaching</h3>
+      <p>1:1 guidance for CEH, SC-300, SC-900, and EDR-focused certifications — study plans, lab practice,
+      and exam strategy.</p>
+    </div>
+    <div class="freelance-card">
+      <h3>Career Guidance</h3>
+      <p>Helping IT support professionals transition into security roles — resume review, interview prep,
+      and skill-gap roadmaps.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section-alt contact-section" id="contact">
+  <p class="section-cmd">$ ssh venkatesh@network</p>
+  <h2 class="section-title"><span class="red">Establish</span> Connection</h2>
+  <p class="contact-sub">Open to freelance security work, mentoring requests, and full-time opportunities.</p>
+
+  <div class="contact-grid">
+    <a href="mailto:youremail@example.com" class="contact-card">
+      <span class="contact-label">EMAIL</span>
+      <span class="contact-value">youremail@example.com</span>
+    </a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-label">LINKEDIN</span>
+      <span class="contact-value">/in/yourprofile</span>
+    </a>
+    <a href="https://github.com/thevenkatesh" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-label">GITHUB</span>
+      <span class="contact-value">@thevenkatesh</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p><span class="logo-red">the</span><span class="logo-white">Venkatesh</span> &mdash; Built &amp; deployed on GitHub Pages. &copy; <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
